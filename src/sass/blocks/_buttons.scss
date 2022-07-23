@@ -1,0 +1,38 @@
+.button{
+    width: 150px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    &__main{
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 425px){
+    .button {
+        width: 117px;
+        height: 25px;
+        font-size: 10px;
+        &__main{
+            margin-top: 20px;
+            height: 36px;
+        }
+    }
+}
+@media (max-width: 320px){
+    .button{
+        &__header{
+            margin-top: 8px;
+            width: 120px;
+            height: 60px;
+            font-size: 17px;
+        }
+    }
+}
