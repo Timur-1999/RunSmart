@@ -48,15 +48,22 @@
 }
 
 @media (max-width: 425px){
-    .header{
-        align-items: flex-end;
+    .header{        
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
         &__phone {
-            font-size: 13px;
-            margin-bottom: 0;
+            font-size: 27px;
+            margin: 40px 0 0;
         }
-        &__logo
+        &__logo{
+            margin: 0 auto;
             img {
-                width: 80%;
+                width: 90%;
+            }
+        }
+        &__contacts{
+            align-items: center;
         }
     }
 }

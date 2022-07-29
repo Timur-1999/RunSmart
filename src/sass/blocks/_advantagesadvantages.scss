@@ -43,6 +43,13 @@
         }
     }
 }
+@media (max-width: 576px){
+    .advantages{
+        &__item{
+            width: 143px;
+        }
+    }
+}
 @media (max-width: 425px){
     .advantages{
         padding: 27px 0;

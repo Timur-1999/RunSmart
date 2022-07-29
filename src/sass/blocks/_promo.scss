@@ -62,8 +62,8 @@
 @media (max-width: 425px){
     .promo{
         min-height: 320px;
-        padding: 10px 0 35px 0;
-        background: url(../images/bg/main_bg.jpg) -85px (center/cover) no-repeat;
+        padding: 47px 0 35px 0;
+        background: url(../images/bg/main_bg.jpg) -80vw (center/cover) no-repeat;
         &__header {
             font-size: 27px;
             margin: 0;
@@ -88,14 +88,14 @@
             }
         }
         &__link{
-            font-size: 9px;
+            font-size: 16px;
         }
     }
 
 }
 @media (max-width: 320px){
     .promo{
-        padding: 37px 0 35px 0;
+        padding: 47px 0 35px 0;
         background: url(../images/bg/main_bg.jpg) -80vw (center/cover) no-repeat;
         &__wrapper{
             margin-top: 25px;

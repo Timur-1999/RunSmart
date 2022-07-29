@@ -1,10 +1,23 @@
 .container{
+    position: relative;
     max-width: 940px;
     margin: 0 auto;
 }
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 768px){
     .container{
-        max-width: 568px;
+        max-width: 576px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 500px;
         margin: 0 auto;
     }
 }
