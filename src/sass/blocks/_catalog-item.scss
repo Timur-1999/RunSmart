@@ -160,16 +160,20 @@
 }
 @media (max-width: 320px){
     .catalog-item{
+        &__title{
+            font-size: 12px;
+        }
         &__link{
-            margin-top: 40px;
+            margin-top: 25px;
         }
         &__back{
-            position: relative;
-            left: 25%;
-            transform: translateX(-25%);
+            position: absolute;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
         }
         &__descr{
-            margin-top: 40px;
+            margin-top: 15px;
+            font-size: 12px;
         }
         &__footer{
             flex-direction: column;
@@ -179,6 +183,18 @@
         }
         &__price{
             margin-bottom: 15px;
+        }
+        &__img{
+            height: 150px;
+        }
+        &__list{
+            li{
+                font-size: 11px;
+                margin-bottom: 12px;
+            }
+        }
+        hr{
+            margin: 12px 0 14px;
         }
     }
 }
