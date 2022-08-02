@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <title>Run Smart</title>
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -55,12 +55,10 @@
     </section>
     <section class="advantages">
         <div class="container">
-            <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
+            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__items">
                 <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <img src="images/icon/icon_cup.png" alt="cup">
-                    </div>
+                    <img src="images/icon/icon_cup.png" alt="cup" class="advantages__icon advantages__icon_cupshake">
                     <div class="advantages__header">Делимся опытом</div>
                     <div class="advantages__desc">
                         Наши сотрудники всегда готовы поделиться своим опытом, 
@@ -68,18 +66,14 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <img src="images/icon/icon_heart.png" alt="heard">
-                    </div>
+                    <img src="images/icon/icon_heart.png" alt="heard" class="advantages__icon advantages__icon_heartbeat">
                     <div class="advantages__header">Заботимся о здоровье</div>
                     <div class="advantages__desc">
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <div class="advantages__icon">
-                        <img src="images/icon/icon_shoe.png" alt="shoe">
-                    </div>
+                    <img src="images/icon/icon_shoe.png" alt="shoe" class="advantages__icon advantages__icon_step">
                     <div class="advantages__header">Учим бегать</div>
                     <div class="advantages__desc">
                         Помогаем с обучением 
@@ -92,20 +86,20 @@
     </section>
     <section class="consultation">
         <div class="container">
-            <div class="title title_left">Получите бесплатную консультацию <br> по подбору пульсометра</div>
+            <h2 class="title title_left">Получите бесплатную консультацию <br> по подбору пульсометра</h2>
             <div class="consultation__desc">Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут</div>
 
-            <form class="feed-form" action="#" method="post">
+            <form id="consultation-form" class="feed-form">
                 <input name="userName" required placeholder="Ваше имя" type="text">
-                <input name="userPhone" required placeholder="Ваш телефон" type="number">
+                <input name="userPhone" required placeholder="Ваш телефон">
                 <input name="userEmail" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>              
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -121,11 +115,11 @@
             <button class="prev"><img src="images/icon/chevron_left.svg" alt="left"></button>
             <button class="next"><img src="images/icon/chevron_right.svg" alt="right"></button>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
-            <div class="title">Каталог пульсометров</div>
+            <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
                 <li class="catalog__tab"><div>для бега</div></li>
@@ -141,13 +135,15 @@
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -166,13 +162,15 @@
                             <div class="catalog-item__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -191,13 +189,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar FT4, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -216,13 +216,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar FT7, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -241,13 +243,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar FT7 Black, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -266,13 +270,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar M430, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -294,13 +300,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar M430, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -322,13 +330,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar FT7, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -347,13 +357,15 @@
                             <div class="catalog-item__descr">Улучшенная версия Polar FT7 Black, имеющая следующие улучшения:</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">НАЗАД</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -369,7 +381,7 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <div class="title">отзывы клиентов</div>
+            <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__wrapper">
                 <img src="images/img/person1.jpg" alt="person1" class="reviews__img">
                 <div class="reviews__content">
@@ -402,7 +414,7 @@
         </div>
     </section>
     <footer class="footer">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac32acd68e9e14749acf2cfc078c509b9fb2e5e6c889d93326169400ebfd9e195&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac32acd68e9e14749acf2cfc078c509b9fb2e5e6c889d93326169400ebfd9e195&amp;source=constructor"></iframe>
         <div class="footer__info">
             <address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
             <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -419,10 +431,10 @@
             <div class="modal__close">&times;</div>
             <div class="modal__title">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#" method="post">
-                <input name="userName" required placeholder="Ваше имя" type="text">
-                <input name="userPhone" required placeholder="Ваш телефон" type="number">
-                <input name="userEmail" required placeholder="Ваш E-mail" type="email">
+            <form class="feed-form">
+                <input name="userName" placeholder="Ваше имя" type="text">
+                <input name="userPhone" placeholder="Ваш телефон">
+                <input name="userEmail" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>              
             </form>
@@ -431,9 +443,9 @@
             <div class="modal__close">&times;</div>
             <div class="modal__title">Ваш заказ:</div>
             <div class="modal__descr"></div>
-            <form class="feed-form" action="#" method="post">
+            <form class="feed-form">
                 <input name="userName" required placeholder="Ваше имя" type="text">
-                <input name="userPhone" required placeholder="Ваш телефон" type="number">
+                <input name="userPhone" required placeholder="Ваш телефон">
                 <input name="userEmail" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Купить</button>              
@@ -445,9 +457,16 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="images/icon/up-page.svg" alt="pageUp">
+    </a>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/carousel.js"></script>
-    <script src="js/catalog.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

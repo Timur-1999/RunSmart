@@ -9,6 +9,14 @@
         font-weight: 500;
         color: #ffffff;
     }
+    input.error{
+        border: 2px solid $main-color;
+    }
+    label.error{
+        text-align: center;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
 }
 
 @media (max-width: 425px){

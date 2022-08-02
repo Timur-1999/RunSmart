@@ -27,6 +27,26 @@
             color: #ff0000;
         }
     }
+    &__icon{
+        &_cupshake{
+            animation-name: cupshake;
+            animation-duration: 1.2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        &_heartbeat{
+            animation-name: heartbeat;
+            animation-duration: 1.2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        &_step{
+            animation-name: step;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+    }
 }
 
 @media (max-width: 768px){

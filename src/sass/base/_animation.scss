@@ -1,0 +1,33 @@
+@keyframes cupshake{
+    from{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+}
+@keyframes heartbeat{
+    from {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes step{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}

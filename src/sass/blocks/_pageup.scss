@@ -1,0 +1,25 @@
+.pageup{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 75px;
+    height: 75px;
+    &:hover{
+        bottom: 40px;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .pageup{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media (max-width: 576px){
+    .pageup{
+        right: 10px;
+    }
+}

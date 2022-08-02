@@ -45,6 +45,13 @@
             margin-bottom: 0;
         }
     }
+    input.error{
+        border: 1px solid $main-color;
+    }
+    label.error{
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 #consultation, #order, #thanks{

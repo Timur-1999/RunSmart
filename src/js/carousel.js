@@ -14,12 +14,3 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
     slider.goTo('next');
 });
-document.querySelector('.nav_dot1').addEventListener('click', function () {
-    slider.goTo(0);
-});
-document.querySelector('.nav_dot2').addEventListener('click', function () {
-    slider.goTo(1);
-});
-document.querySelector('.nav_dot3').addEventListener('click', function () {
-    slider.goTo(2);
-});
